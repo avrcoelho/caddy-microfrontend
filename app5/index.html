@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>app5</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      #application-content {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="application-layout"></div>
+    <div id="application-content"></div>
+    <script>
+      window.__APP_LAYOUT = {
+        getLayoutTarget: function () {
+          return document.getElementById("application-layout");
+        },
+        getContentTarget: function () {
+          return document.getElementById("application-content");
+        },
+      };
+    </script>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
