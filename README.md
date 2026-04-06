@@ -167,3 +167,8 @@ function waitAndMount() {
   observer.observe(document.body, { childList: true, subtree: true });
 }
 ```
+
+## Documentation
+
+- [How it works](docs/how-it-works.md) — detailed walkthrough of the integration contract, shell execution sequence, timing solution, and full request flow.
+- [Caddy as a reverse proxy](docs/caddy-microfrontends.md) — pros, cons, and guidance on when to use Caddy for microfrontend routing.
